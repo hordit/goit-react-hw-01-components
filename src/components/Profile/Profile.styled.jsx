@@ -44,7 +44,7 @@ width: 275px;
 color: grey ;
 font-size: 14px;
 font-weight: 500;
-border-top: 0.8px solid #d9d9d9b1;
+border-top: 1px solid #d9d9d9b1;
 border-radius: ${p => p.theme.radii.borderRadiusBottom};
 box-shadow: ${p => p.theme.boxShadow};
 background-color: #F4F6F9;
@@ -54,7 +54,7 @@ export const Li = styled.li`
 display: flex;
 flex-basis: 33%;
 flex-direction: column;
-padding: 25px 0 25px 0;
+padding: 22px 0 22px 0;
 & + & {
     border-left: 1px solid #d9d9d9b1;
     box-sizing: border-box;
@@ -66,6 +66,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 &.quantity {
+  padding-top: 4px;
     color: ${p => p.theme.colors.black};
     font-weight: bold;
 }
