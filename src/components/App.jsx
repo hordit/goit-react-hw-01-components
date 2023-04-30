@@ -1,4 +1,4 @@
-import { Profile } from "./Profile";
+import { Profile } from "./Profile/Profile";
 import user from "../user.json";
 import { Statistics } from "./Statistics";
 import data from "../data.json";
@@ -6,25 +6,25 @@ import { FriendList } from "./FriendList";
 import friends from "../friends.json";
 import { TransactionHistory } from "./TransactionHistory";
 import transaction from "../transaction.json"
+import { GlobalStyle } from "./GlobalStyle";
 
 export const App = () => {
-  const title = "Upload stats";
   return (
     <div>
-      <Profile
-        user={user}
-      />
+      <GlobalStyle />
 
-      {title ? (
-        <Statistics title={title} stats={data} />
-      ) : (
+      <Profile user={user}/>
+
+      {data && data.length > 0 && (
+        <Statistics title="Upload stats" stats={data} />
+      )}
+      {!data && data.length === 0 && (
         <Statistics stats={data} />
       )}
-
+      
       <FriendList friends={friends} />
 
       <TransactionHistory items={transaction} />
-
     </div>
   );
 }

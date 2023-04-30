@@ -4,10 +4,10 @@ export const Stat = ({
     stat: { label, percentage }
 }) => {
     return (
-        <>
-          <span className="label">{label}</span>
-          <span className="percentage">{percentage}%</span>
-        </>
+        <div>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}%</span>
+        </div>
     );
 };
 
