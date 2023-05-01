@@ -57,7 +57,6 @@ flex-direction: column;
 padding: 22px 0 22px 0;
 & + & {
     border-left: 1px solid #d9d9d9b1;
-    box-sizing: border-box;
   };
 `;
 
