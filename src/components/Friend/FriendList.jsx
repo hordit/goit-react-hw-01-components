@@ -4,9 +4,9 @@ import { LiItem, UlList } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
     return (
-        <UlList className="friend-list">
+        <UlList>
             {friends.map(friend => (
-                <LiItem key={friend.id} className="item">
+                <LiItem key={friend.id}>
                     <FriendListItem friend={friend} />
                 </LiItem>
             ))}

@@ -5,31 +5,30 @@ export const Profile = ({
     user: { username, tag, location, avatar, stats },
 }) => {
     return (
-        <DivProfile className="profile">
-            <DivDescription className="description">
+        <DivProfile>
+            <DivDescription>
                 <Image
                     src={avatar}
                     alt={username}
-                    className="avatar"
                     width="90"
                 />
-                <Name className="name">{username}</Name>
-                <Contacts className="tag">@{tag}</Contacts>
-                <Contacts className="location">{location}</Contacts>
+                <Name>{username}</Name>
+                <Contacts>@{tag}</Contacts>
+                <Contacts>{location}</Contacts>
             </DivDescription>
 
-            <UlStats className="stats">
+            <UlStats>
                 <Li>
-                    <Span className="label">Followers</Span>
-                    <Span className="quantity">{stats.followers}</Span>
+                    <Span>Followers</Span>
+                    <Span>{stats.followers}</Span>
                 </Li>
                 <Li>
-                    <Span className="label">Views</Span>
-                    <Span className="quantity">{stats.views.toLocaleString()}</Span>
+                    <Span>Views</Span>
+                    <Span>{stats.views.toLocaleString()}</Span>
                 </Li>
                 <Li>
-                    <Span className="label">Likes</Span>
-                    <Span className="quantity">{stats.likes}</Span>
+                    <Span>Likes</Span>
+                    <Span>{stats.likes}</Span>
                 </Li>
             </UlStats>
         </DivProfile>

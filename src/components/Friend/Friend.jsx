@@ -6,9 +6,9 @@ export const FriendListItem = ({
     friend: { avatar, name, isOnline }
 }) => {
     return <DivItem>
-        <SpanStatus className="status" isOnline={isOnline}><BsFillCircleFill /></SpanStatus>
-        <ImgAvatar className="avatar" src={avatar} alt={name} width="48" />
-        <PName className="name">{name}</PName>
+        <SpanStatus isOnline={isOnline}><BsFillCircleFill /></SpanStatus>
+        <ImgAvatar src={avatar} alt={name} width="48" />
+        <PName>{name}</PName>
     </DivItem>;
 };
 

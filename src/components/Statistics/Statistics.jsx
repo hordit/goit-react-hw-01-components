@@ -5,13 +5,13 @@ export const Statistics = ({ title, stats }) => {
     const total = stats.reduce((acc, stat) => acc + stat.percentage, 0);
 
     return (
-        <Section className="statistics">
-            {title && <H2 className="title">{title.toUpperCase()}</H2>}
-            <Ulist className="stat-list">
+        <Section>
+            {title && <H2>{title.toUpperCase()}</H2>}
+            <Ulist>
                 {stats.map(({ id, label, percentage }) => (
-                    <LiItem key={id} className="item" color={`#${Math.floor(Math.random() * 16777215).toString(16)}`}>
-                        <SpanLabel className="label">{label}</SpanLabel>
-                        <SpanPercentage className="percentage">{((percentage / total) * 100).toFixed(0)}%</SpanPercentage>
+                    <LiItem key={id} color={`#${Math.floor(Math.random() * 16777215).toString(16)}`}>
+                        <SpanLabel>{label}</SpanLabel>
+                        <SpanPercentage>{((percentage / total) * 100).toFixed(0)}%</SpanPercentage>
                     </LiItem>
                 ))}
             </Ulist>
