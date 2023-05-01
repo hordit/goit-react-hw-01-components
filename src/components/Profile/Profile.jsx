@@ -11,7 +11,7 @@ export const Profile = ({
                     src={avatar}
                     alt={username}
                     className="avatar"
-                    width="80"
+                    width="90"
                 />
                 <Name className="name">{username}</Name>
                 <Contacts className="tag">@{tag}</Contacts>

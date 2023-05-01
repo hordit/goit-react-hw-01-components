@@ -4,9 +4,9 @@ export const Section = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
-max-width: 530px;
+max-width: 480px;
 margin: 40px auto 40px auto;
-padding: 70px 0 70px 0;
+padding: 70px;
 background-color: ${p => p.theme.colors.accent};
 `;
 
@@ -14,7 +14,7 @@ export const H2 = styled.h2`
 font-size: 22px;
 text-align: center;
 color: #5d6265;
-width: 380px;
+width: 100%;
 padding: 33px;
 box-shadow: ${p => p.theme.boxShadow};
 background-color: ${p => p.theme.colors.white};
@@ -22,7 +22,7 @@ background-color: ${p => p.theme.colors.white};
 
 export const Ulist = styled.ul`
 display: flex;
-width: 380px;
+width: 100%;
 box-shadow: ${p => p.theme.boxShadow};
 `;
 

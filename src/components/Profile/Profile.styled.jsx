@@ -6,6 +6,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: 20px auto 50px auto;
+padding: 80px 88px;
 width: 428px;
 height: 504px;
 background-color: ${p => p.theme.colors.accent};
@@ -15,17 +16,17 @@ export const DivDescription = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 275px;
-height: 255px;
+padding: 30px 0 30px 0;
+width: 100%;
 background-color: ${p => p.theme.colors.white};
 gap: 10px;
 box-shadow: ${p => p.theme.boxShadow};
-border-radius: ${p => p.theme.radii.borderRadiusTop};
+border-radius: 4px 4px 0 0;
 `;
 
 export const Image = styled.img`
-margin-bottom: 20px;
-margin-top: 30px;
+border-radius: 50%;
+background-color: ${p => p.theme.colors.background};
 `;
 
 export const Name = styled.p`
@@ -40,12 +41,12 @@ font-weight: 500;
 export const UlStats = styled.ul`
 display: flex;
 justify-content: center;
-width: 275px;
+width: 100%;
 color: grey ;
 font-size: 14px;
 font-weight: 500;
 border-top: 1px solid #d9d9d9b1;
-border-radius: ${p => p.theme.radii.borderRadiusBottom};
+border-radius: 0 0 4px 4px;
 box-shadow: ${p => p.theme.boxShadow};
 background-color: #F4F6F9;
 `;

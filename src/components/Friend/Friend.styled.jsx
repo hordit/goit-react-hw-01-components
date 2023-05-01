@@ -14,7 +14,7 @@ svg {
 `;
 
 export const ImgAvatar = styled.img`
-background-color: #79c8ea9a;
+background-color: ${p => p.theme.colors.background};
 border-radius: 4px;
 width: 70px;
 padding: 5px;
