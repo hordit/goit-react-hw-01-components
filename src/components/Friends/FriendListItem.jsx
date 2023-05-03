@@ -1,6 +1,6 @@
 import { BsFillCircleFill } from "react-icons/bs";
 import PropTypes from 'prop-types';
-import { DivItem, ImgAvatar, PName, SpanStatus } from './Friend.styled';
+import { DivItem, ImgAvatar, PName, SpanStatus } from './FriendListItem.styled';
 
 export const FriendListItem = ({
     friend: { avatar, name, isOnline }
